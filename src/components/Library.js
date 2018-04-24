@@ -25,9 +25,10 @@ class Library extends Component {
                 <h1 id="showinfo-title">{this.state.showinfo.title}</h1>
                 <h2 className="actress">Starring: {this.state.showinfo.actress}</h2>
               <div id="network">{this.state.showinfo.network}</div>
+              <div id="genre">{this.state.showinfo.genre}</div>
 
               <p className="description">{this.state.showinfo.description}</p>
-                 <Link to="/">Watch more TV</Link>
+                 <a href="/" class="btn btn-info" role="button">WATCH A DIFFERENT SHOW</a>
            </div>
             </section>
           </section>

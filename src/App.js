@@ -9,11 +9,11 @@ class App extends Component {
     return (
       <div className="App">
       <header>
-        <h1>YOU ARE N<img src={require('./assets/u_eye_gif.gif')} height='100px' margin-top='-15px'/>W WATCHING MY TV</h1>
+        <h1 id="headline">YOU ARE N<img src='/assets/blink.gif' height='40px' margin-top='-15px'/>W WATCHING MY TV</h1>
         </header>
         <main>
         <Route exact path="/" component={Shows} />
-        <Route path="/showinfo/:slug" component={Library} />
+        <Route path="/:slug" component={Library} />
 
         </main>
         </div>

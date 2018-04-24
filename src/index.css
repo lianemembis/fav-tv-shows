@@ -14,6 +14,11 @@ body {
 
 h1 {
   font-weight: 900;
+  font-family: 'Gugi', cursive;
+}
+
+#headline img {
+  margin-top:-10px;
 }
 
 header {
@@ -40,14 +45,32 @@ p.description {
 
 #suggestions {
   clear: both;
-  padding-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 col-md {
   padding: 20px;
 }
 
+.shrink:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+
 .row {
    display: inline-block;
    float: left;
+   padding-bottom: 20px;
+}
+
+input[type="submit"] {
+  margin-left: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
 }

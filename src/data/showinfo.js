@@ -17,7 +17,7 @@ export default [{
 }, {
    title: 'Insecure',
    actress: 'Issa Rae',
-   description: 'The eight-episode first season explores the black female experience from the perspective of the two female protagonists, Issa (Issa Rae) and Molly (Yvonne Orji) who have been best friends with each other since their college days at Stanford. They are both in their late 20s, career and relationship experiences are explored. Issa works at a non-profit that benefits middle-school students of color. Issa has a long-term relationship with Lawrence (Jay Ellis).[19] Molly is a successful corporate attorney who has career success but difficulty with dating men. The half-hour series explores social and racial issues that relate to the contemporary black experience',
+   description: 'The eight-episode first season explores the black female experience from the perspective of the two female protagonists, Issa (Issa Rae) and Molly (Yvonne Orji) who have been best friends with each other since their college days at Stanford. They are both in their late 20s, career and relationship experiences are explored. Issa works at a non-profit that benefits middle-school students of color. Issa has a long-term relationship with Lawrence (Jay Ellis).[19] Molly is a successful corporate attorney who has career success but difficulty with dating men. The half-hour series explores social and racial issues that relate to the contemporary black experience.',
    network: 'Network: HBO',
    genre: 'Comedy',
    showCover: '/assets/insecure.jpeg',
