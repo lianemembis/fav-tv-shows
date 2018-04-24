@@ -20,7 +20,34 @@ header {
   padding-top: 50px;
 }
 
+.intro {
+  background: #007AFF!important;
+  height: 50px;
+}
+
 .showinfo-details {
-    margin: auto;
-    padding: 20px
+    padding: 20px;
+}
+
+p.description {
+    text-align: justify;
+    padding-top: 30px;
+}
+
+#showart {
+  border: 1px solid white;
+}
+
+#suggestions {
+  clear: both;
+  padding-top: 20px;
+}
+
+col-md {
+  padding: 20px;
+}
+
+.row {
+   display: inline-block;
+   float: left;
 }

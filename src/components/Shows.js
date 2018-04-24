@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import showinfoData from './../data/showinfo';
 
 class Show extends Component {
@@ -7,26 +7,53 @@ class Show extends Component {
      super(props);
 
      this.state = {
-       showinfo: showinfoData
+       showinfo: showinfoData,
+       newShow: ''
      };
+   }
+
+   handleChange(e) {
+     this.setState({ newShow: e.target.value })
+   }
+
+   handleSubmit(e) {
+     e.preventDefault();
+     if (!this.state.newShow) { return }
+     const newShow = { title: this.state.newShow, showCover: '/assets/comingsoon.png', description: 'Your suggestion is under review!' };
+     this.setState({ showinfo: [...this.state.showinfo, newShow], newShow:'' });
    }
 
   render() {
     return (
-      <section className='library'>
-      {
-        this.state.showinfo.map( (showinfo, index) =>
+      <div className='library'>
+      <p id="intro">Click on a show to discover more information.</p>
+      <br/>
+      {this.state.showinfo.map( (showinfo, index) =>
+          <div className="container">
+          <div className="row justify-content-start">
+          <div className="col-md">
+          <div>
           <Link to={`/showinfo/${showinfo.slug}`} key={index}>
-            <img src={showinfo.showCover} alt={showinfo.title} />
-            <div>{showinfo.title}</div>
+            <img id="showart" src={showinfo.showCover} alt={showinfo.title} height="200px" padding-bottom="20px" /></Link>
+            <h1>{showinfo.title}</h1>
             <div>{showinfo.network}</div>
             <div>{showinfo.genre}</div>
-
-            <br/>
-          </Link>
+            </div>
+          </div>
+          </div>
+          </div>
         )}
 
-    </section>
+        <div id="suggestions">
+         <h2>TV SHOW SUGGESTIONS</h2>
+         <p>Liane needs a new television show to binge-watch!</p>
+         <form onSubmit={ (e) => this.handleSubmit(e) }>
+          <input type="text" placeholder="Name of show here..."  value={ this.state.newShow } onChange={ (e) => this.handleChange(e) }/>
+          <input type="submit" />
+          </form>
+          </div>
+    </div>
+
     );
   }
 }

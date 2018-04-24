@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import showinfoData from './../data/showinfo';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Library extends Component {
    constructor(props) {
@@ -17,14 +17,13 @@ class Library extends Component {
 
    render() {
         return (
+          <div className="container">
           <section className="library">
-            {this.props.match.params.slug}
             <section id="showinfo-info">
               <img id="showinfo-cover-art" src={this.state.showinfo.showCover} />
               <div className="showinfo-details">
                 <h1 id="showinfo-title">{this.state.showinfo.title}</h1>
-                <p> Link to trailer </p>
-                <h2 className="actress">{this.state.showinfo.actress}</h2>
+                <h2 className="actress">Starring: {this.state.showinfo.actress}</h2>
               <div id="network">{this.state.showinfo.network}</div>
 
               <p className="description">{this.state.showinfo.description}</p>
@@ -32,6 +31,7 @@ class Library extends Component {
            </div>
             </section>
           </section>
+          </div>
         );
     }
 }

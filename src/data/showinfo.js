@@ -4,7 +4,7 @@ export default [{
   description: 'When you get into trouble there\'s only one person to call, Olivia Pope. Olivia is a professional fixer who makes problems go away before anyone even knows they exist. For the moneyed, the powerful and even the President, Olivia is a legend in her field. Her spectacular success is mostly due to her unbreakable rule of always trust your gut. No matter how careful you are, when you do damage control for a living, you\'re bound to cause some damage to your own life. She and her crew eat, sleep, live and breathe crisis. Each week, as the team races against the clock to defuse intriguing new problems before they become full-blown disasters, they also have to deal with their own personal issues. They may call themselves gladiators in suits, but little by little, Olivia and her crew begin to reveal the chinks in their armor.',
   network: 'Network: ABC',
   genre: 'Drama',
-  showCover: './assets/scandal.jpg',
+  showCover: '/assets/scandal.jpg',
   slug: 'scandal',
 }, {
    title: 'Suits',
@@ -12,7 +12,7 @@ export default [{
    description: 'While running from a drug deal gone bad, Mike Ross, a brilliant young college-dropout, slips into a job interview with one of New York City\'s best legal closers, Harvey Specter. Tired of cookie-cutter law school grads, Harvey takes a gamble by hiring Mike on the spot after he recognizes his raw talent and photographic memory. Mike and Harvey are a winning team. Even though Mike is a genius, he still has a lot to learn about law. And while Harvey may seem like an emotionless, cold-blooded shark, Mike\'s sympathy and concern for their cases and clients will help remind Harvey why he went into law in the first place. Mike\'s other allies in the office include the firm\'s best paralegal Rachel and Harvey\'s no-nonsense assistant Donna to help him serve justice. Proving to be an irrepressible duo and invaluable to the practice, Mike and Harvey must keep their secret from everyone including managing partner Jessica Louis, who seems intent on making life as difficult as possible.',
    network: 'Network: USA',
    genre: 'Drama',
-   showCover: './assets/suits.jpg',
+   showCover: '/assets/suits.jpg',
    slug: 'suits',
 }, {
    title: 'Insecure',
